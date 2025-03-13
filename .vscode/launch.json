@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DiscoveryApplication<discovery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.thienan.discovery.DiscoveryApplication",
+            "projectName": "discovery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SchoolApplication<school>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.thienan.school.SchoolApplication",
+            "projectName": "school",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=46283 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=school"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-StudentApplication<student>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.thienan.student.StudentApplication",
+            "projectName": "student",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=46373 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=student"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GatewayApplication<gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.thienan.gateway.GatewayApplication",
+            "projectName": "gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=45637 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=gateway"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigApplication<config>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.thienan.config.ConfigApplication",
+            "projectName": "config",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
